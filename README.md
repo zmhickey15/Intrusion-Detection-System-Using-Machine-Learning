@@ -1,3 +1,35 @@
+# Group 4 
+Mistry, Dhruve 
+<br>Perez, Fernando
+<br>Hickey, Zach
+<br>Silva, Audrey
+<br>Hernandez, Rafael
+
+IDS (intrusion detection systems) framework that can detect attacks on intra-vehicle
+networks, which is a type of computer network used to connect 
+electronic devices within vehicles. This consists of two phases, model 
+training and model prediction. The project's first phase trains three
+machine learning models; XGBoost, LightGBM and CatBoost, on traffic 
+data set. These three machine learning models are part of an ensemble 
+framework that can achieve optimal performance in detecting all types 
+of attacks. Each one is trained to detect a specific kind of attack. 
+As an attack is presented the best one is assigned as the ‘leader’ for 
+that type of attack which is based on the F1 score. Then, using the 
+leader model, and the other models, it would compare the three to see 
+if they all agree. Once the type of attack is identified and the model
+being used is established it can respond. If there is any
+disagreement, the models would then defer to the leader on the type of 
+attack. We have tried multiple models to try to improve the f1 scores of 
+the detection system thus improving its performance. We then noticied the 
+unbalanced data set towards the lowest performing detection, we then altered the data set
+to balance the data set and allowed the models to train on this data.
+
+This project is on git so here are instructions on how to clone this repo:
+https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
+
+This project is mostly a jupyter notebook so just like in the lab assignments you can run the notebook step by step or all at once. Unlike
+our labs this notebook does require a large amount of time to execute.
+
 # Intrusion-Detection-System-Using-Machine-Learning
 
 This repository contains the code for the project "IDS-ML: Intrusion Detection System Development Using Machine Learning". The code and proposed Intrusion Detection System (IDSs) are general models that can be used in any IDS and anomaly detection applications. In this project, three papers have been published:  
